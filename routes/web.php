@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\FlightController;
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/form', FormController::class);
+
+Route::resource('/flight', FlightController::class);
+
+//Route::get('/flight', [FlightController::class, 'unknownindex']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

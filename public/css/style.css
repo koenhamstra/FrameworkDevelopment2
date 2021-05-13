@@ -24,6 +24,11 @@
 @import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+.form-description{
+    position: center;
+    margin: 10px;
+    margin-left: 25%;
+}
 
 * {
      box-sizing: border-box !important;
